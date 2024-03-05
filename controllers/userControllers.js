@@ -2,7 +2,7 @@ const asyncHandler = require("express-async-handler");
 const jwt = require('jsonwebtoken');
 
 const { createUser, findUserByEmail } = require('../models/userModels');
-const generateToken = require('../config/generateToken');
+
 const { v4: uuidv4 } = require('uuid');
 const crypto = require('crypto');
 
